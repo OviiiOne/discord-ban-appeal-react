@@ -52,7 +52,8 @@
 		]
 	},
 	"browser": {
-		"crypto": false
+		"crypto": false,
+		"htpps": false
 	},
 	"proxy": "http://localhost:9000/"
 }
