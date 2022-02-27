@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Redirect} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 import {oauth} from"../App"
 class Callback extends Component {
 
