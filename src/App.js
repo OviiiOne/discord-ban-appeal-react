@@ -2,14 +2,14 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import {
     BrowserRouter as Router,
-    Switch,
+    Routes,
     Route,
+    Navigate,
 } from "react-router-dom";
 import Box from "@material-ui/core/Box";
 import Home from "./Components/Home";
 import Callback from "./Components/Callback";
 import Form from "./Components/Form";
-import {Redirect} from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Success from "./Components/Success";
 import Error from "./Components/Error";
@@ -73,7 +73,7 @@ function App() {
                         {loading ? <Skeleton variant={'text'} width={750} height={37}/> : <h1>Apelación de ban del servior de VEGETTA777</h1>}
                     </Box>
                 </Grid>
-                <Switch>
+                <Routes>
                     <Route path="/" exact>
                         <Home/>
                     </Route>
@@ -81,17 +81,17 @@ function App() {
                         <Callback/>
                     </Route>
                     <Route path="/404" render={(props) => <Error {...props}/>}/>
-                    <Route path="/error" exact component={ErrorPath}/>
-                    <Route path="/success" exact component={SuccessPath}/>
+                    <Route path="/error" element={<ErrorPath/>}/>
+                    <Route path="/success" element={<SuccessPath/>}/>
                     <PrivateRoute path="/form" exact>
                         <Form/>
                     </PrivateRoute>
                     <PrivateRoute path="/success" exact>
                         <Success/>
                     </PrivateRoute>
-                    <Route path="*" component={PageNotFoundError}/>
+                    <Route path="*" element={<PageNotFoundError/>}/>
 
-                </Switch>
+                </Routes>
             </Grid>
 
         </Router>
@@ -106,7 +106,7 @@ function PrivateRoute({children, ...rest}) {
                 localStorage.getItem("access_token") ? (
                     children
                 ) : (
-                    <Redirect
+                    <Navigate
                         to={{
                             pathname: "/",
                             state: {from: location}
