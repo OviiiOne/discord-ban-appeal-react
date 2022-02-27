@@ -33,7 +33,7 @@
     "start": "react-app-rewired start",
     "build": "node set_config.js && react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject",
+    "eject": "react-app-rewired eject",
     "start:lambda": "netlify-lambda serve functions"
   },
   "eslintConfig": {
