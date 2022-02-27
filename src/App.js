@@ -106,7 +106,7 @@ function PrivateRoute({children, ...rest}) {
                 localStorage.getItem("access_token") ? (
                     children
                 ) : (
-                    <Redirect
+                    <Navigate
                         to={{
                             pathname: "/",
                             state: {from: location}
