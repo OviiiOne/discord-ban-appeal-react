@@ -3,7 +3,7 @@ import {oauth} from "../App"
 import '../App.css';
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import {Redirect} from "react-router-dom";
+import {Navigate} from "react-router-dom";
 import Question from "./Question";
 import {createJwt} from "../Helpers/jwt-helpers";
 import config from "../config.json"
