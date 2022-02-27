@@ -4,122 +4,77 @@
 version: 2
 updates:
   # Enable version updates for npm
-  - package-ecosystem: "ansi-html"
+  - package-ecosystem: "npm"
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
 
-  # Enable version updates for netlify lambda
-  - package-ecosystem: "netlify-lambda"
+  # Enable version updates for bundler
+  - package-ecosystem: "bundler"
     # Look for a `netlify-lambda` in the `root` directory
     directory: "/"
     # Check for updates once a week
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "serialize-javascript"
+  - package-ecosystem: "cargo"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "terser-webpack-plugin"
+  - package-ecosystem: "composer"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "react-scripts"
+  - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "object-path"
+  - package-ecosystem: "mix"
     directory: "/"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "adjust-sourcemap-loader"
+  - package-ecosystem: "	elm"
     directory: "/"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "node-notifier"
+  - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "@jest/reporters"
+  - package-ecosystem: "nuget"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "immer"
+  - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "react-dev-utils"
+  - package-ecosystem: "gradle"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "browserslist"
+  - package-ecosystem: "maven"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "@babel/helper-compilation-targets"
+  - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
   
-  - package-ecosystem: "core-js-compat"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "glob-parent"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "fast-glob"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "chokidar"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "postcss"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "resolve-url-loader"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "nth-check"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "css-select"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "node-forge"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  
-  - package-ecosystem: "selfsigned"
+  - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "daily"
