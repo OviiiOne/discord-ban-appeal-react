@@ -29,7 +29,7 @@ class Callback extends Component {
     render() {
         return (
             <div>
-                {this.state.logged_in ? <Redirect to={{
+                {this.state.logged_in ? <Navigate to={{
                     pathname: "/form"
                 }} /> : null}
             </div>
