@@ -73,7 +73,7 @@ function App() {
                         {loading ? <Skeleton variant={'text'} width={750} height={37}/> : <h1>Apelación de ban del servior de VEGETTA777</h1>}
                     </Box>
                 </Grid>
-                <Switch>
+                <Routes>
                     <Route path="/" exact>
                         <Home/>
                     </Route>
@@ -81,17 +81,17 @@ function App() {
                         <Callback/>
                     </Route>
                     <Route path="/404" render={(props) => <Error {...props}/>}/>
-                    <Route path="/error" exact component={ErrorPath}/>
-                    <Route path="/success" exact component={SuccessPath}/>
+                    <Route path="/error" element={<ErrorPath/>}/>
+                    <Route path="/success" element={<SuccessPath/>}/>
                     <PrivateRoute path="/form" exact>
                         <Form/>
                     </PrivateRoute>
                     <PrivateRoute path="/success" exact>
                         <Success/>
                     </PrivateRoute>
-                    <Route path="*" component={PageNotFoundError}/>
+                    <Route path="*" element={<PageNotFoundError/>}/>
 
-                </Switch>
+                </Routes>
             </Grid>
 
         </Router>
