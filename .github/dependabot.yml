@@ -39,7 +39,7 @@ updates:
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "	elm"
+  - package-ecosystem: "elm"
     directory: "/"
     schedule:
       interval: "daily"
