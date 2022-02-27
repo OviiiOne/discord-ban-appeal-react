@@ -20,6 +20,7 @@ import {createBrowserHistory} from "history";
 import * as ReactGA from "react-ga";
 import ErrorPath from "./Components/errorPath";
 import SuccessPath from "./Components/successPath";
+import crypto-browserify from "@crypto-browserify"
 
 const axios = require("axios")
 
