@@ -1494,10 +1494,10 @@
     prop-types "^15.7.2"
     react-is "^16.8.0 || ^17.0.0"
 
-"@mdi/js@^6.5.95":
-  version "6.5.95"
-  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-6.5.95.tgz#2d895b013408f213252b77c30e0fdaaba6dc8b4b"
-  integrity sha512-x/bwEoAGP+Mo10Dfk5audNIPi7Yz8ZBrILcbXLW3ShOI/njpgodzpgpC2WYK3D2ZSC392peRRemIFb/JsyzzYQ==
+"@mdi/js@^7.0.96":
+  version "7.0.96"
+  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-7.0.96.tgz#8e7a54d5cb38831e3150632cc19e380f54d9edd6"
+  integrity sha512-lNqhkV3cpPfYb/Avh+vXLFukUTbHbyHoFo4Jdc7Oc9UvURGVhamFIpgOVvEf2bNA78zvjXTZeVWExUTR+DLBfQ==
 
 "@mdi/react@^1.4.0":
   version "1.5.0"
