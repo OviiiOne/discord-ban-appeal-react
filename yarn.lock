@@ -4324,10 +4324,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-discord-oauth2@^2.3.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/discord-oauth2/-/discord-oauth2-2.9.0.tgz#5fb64f79f92f654aa4c7d44e993e4dc257126628"
-  integrity sha512-2DtocOmsXw5KjhW4eUMpr6RAih+juON0DOzSWr6F8qZePzuOJWznHbqDJmU70YB4Wv2Psyc6Shr3SEvRQ2Gk4Q==
+discord-oauth2@^2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/discord-oauth2/-/discord-oauth2-2.10.1.tgz#ca48de91252aef3194b859d5df659682f3d3ba5a"
+  integrity sha512-UsjkqCCn/hJpcT2GrygghNyYHc7ahuF4UJ/9zNXw9Q31pecn1cQhk674LulGC+no3nP4pxP2MR4ksCLGpiA0lg==
 
 dns-equal@^1.0.0:
   version "1.0.0"
